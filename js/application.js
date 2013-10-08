@@ -30,7 +30,7 @@
         
         });
 
-        $.get('https://api.github.com/users/song940/repos',function(data){
+        $.get('https://api.github.com/users/dtting/repos',function(data){
             $.each(data,function(i,item){
                 var proj = $('<div />').addClass('span4');
                 $('<i>').addClass('icon icon-github').appendTo(proj);

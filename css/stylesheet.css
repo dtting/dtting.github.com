@@ -48,6 +48,10 @@ a:link {
   transition: color 300ms linear;
 }
 
+a.btn{
+  color: white;
+}
+
 .btn{
   border: none;
   box-shadow: none;
@@ -64,9 +68,7 @@ a:link {
      -moz-transition: 0.25s;
           transition: 0.25s;
 }
-a.btn{
-  color: white;
-}
+
 .icon{
   font-size: 6em;
   color: #eb5055;
