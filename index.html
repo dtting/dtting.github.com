@@ -17,42 +17,81 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/application.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
+
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
   </head>
 
-  <body>
-    <header class="clearfix">
-      <div class="span3 logo">
-        <h1><a href="http://dtting.me"><span><b>D</b>ONG<b>T</b>ING<b>TING</b></span>.ME</a></h1>
+  <body data-spy="scroll" data-target=".navbar">
+   <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand logo" href="http://dtting.me"><u>D</u>ONG <u>T</u>ING <u>TING</u> <u class="root-domain">.ME</u></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="#home">Home</a>
+              </li>
+              <li class="">
+                <a href="http://blog.dtting.me">Blog</a>
+              </li>
+              <li class="">
+                <a href="#skill">Skill</a>
+              </li>
+              <li class="">
+                <a href="#projects">Projects</a>
+              </li>
+              <li class="">
+                <a href="#hobbies">Hobbies</a>
+              </li>
+              <li class="">
+                <a href="#contact">Contact</a>
+              </li>
+                        <li class="">
+                <a href="http://about.me/dtting">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header> 
+    </div>
     <div class="wrapper">
-      <section class="main full-page">
+      <section id="home" class="main full-page">
         <div class="hero-content">
           <h1>I AM A <span>DESIGNER</span> / <span>DEVELOPER</span><br />Living in Beijing.</h1>
-          <a href="#about" class="btn btn-large scroll">Tell me more!</a>
+          <a href="#skill" class="btn btn-large scroll">Tell me more!</a>
         </div>
     </section>
 
-      <section class="about">
+      <section id="skill" class="about">
         <div class="container">
           <div class="row">
 
             <div class="span12">
               <h1>I am incredibly <span class="underline">special</span>.</h1>
             </div>
-            <div class="feature span4">
+            <div class="span4">
               <div aria-hidden="true" class="icon icon-tint"></div>
               <h3>I can design</h3>
               <p class="hidden-phone">Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus.</p>
             </div>
 
-            <div class="feature span4">
+            <div class="span4">
               <div aria-hidden="true" class="icon icon-code"></div>
               <h3>I can develop</h3>
               <p class="hidden-phone">Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus.</p>
             </div>
 
-            <div class="feature span4">
+            <div class="span4">
               <div aria-hidden="true" class="icon icon-mobile-phone"></div>
               <h3>I can build apps</h3>
               <p class="hidden-phone">Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus.</p>
@@ -62,37 +101,59 @@
         </div>
       </section>
 
-      <section class="projects full-page">
-        <div class="container">
-          <div class="row">
-            <div class="span12">
-              <h1>Projects</h1>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="hobbies full-page">
+      <section id="projects" class="projects">
         <div class="container">
           <div class="page-header text-center">
-            <h1>My hobbies</h1>
+             <h1>Projects</h1>
+             follow me on <a href="https://github.com">Github</a>
+          </div>
+          
+          <div id="projects-list" class="row"></div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="hobbies">
+        <div class="container">
+          <div class="row">
+
+            <div class="span12">
+              <h1>My hobbies</h1>
+            </div>
+            <div class="span4">
+              <div aria-hidden="true" class="icon icon-music"></div>
+              <h3>I love music</h3>
+              <p class="hidden-phone">Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus.</p>
+            </div>
+
+            <div class="span4">
+              <div aria-hidden="true" class="icon icon-food"></div>
+              <h3>I love food</h3>
+              <p class="hidden-phone">Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus.</p>
+            </div>
+
+            <div class="span4">
+              <div aria-hidden="true" class="icon icon-book"></div>
+              <h3>I love reading</h3>
+              <p class="hidden-phone">Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus.</p>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="container">
           <div class="row">
             <div class="span12 location">
-              <h1>I'm based in <span class="colorHighlight2">Paris</span></h1>
-              <p>Beijing of China / (+86)188 1051 6991</p>
-              <a href="#contact-form" class="modal-form btn cta">Contact Me</a>
+              <h1>Contact</h1>
+              <p>Beijing of China / <a href="tel:+8615801320969">(+86)158 0132 0969</a></p>
+              <a href="mailto:hi@dtting.me" class="modal-form btn cta">Contact Me</a>
             </div>
             <div class="span12 social">
-              <a href="#"><i class="icon icon-twitter-sign"></i></a>
-              <a href="#"><i class="icon icon-facebook-sign"></i></a>
-              <a href="#"><i class="icon icon-github-sign"></i></a>
-              <a href="#"><i class="icon icon-google-plus-sign"></i></a>
+              <a href="https://twitter.com/dtting"><i class="icon icon-twitter-sign"></i></a>
+              <a href="https://facebook.com/dtting"><i class="icon icon-facebook-sign"></i></a>
+              <a href="https://github.com/dtting"><i class="icon icon-github-sign"></i></a>
+              <a href="https://plus.google.com/dtting"><i class="icon icon-google-plus-sign"></i></a>
             </div>
 
           </div>

@@ -47,28 +47,51 @@ a:link {
   -o-transition: color 300ms linear;
   transition: color 300ms linear;
 }
+
+.btn{
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  background: #eb5055;
+  color: white;
+}
+
+.btn:hover,
+.btn:focus{
+  color: white;
+  background: #e8393f;
+  -webkit-transition: 0.25s;
+     -moz-transition: 0.25s;
+          transition: 0.25s;
+}
+a.btn{
+  color: white;
+}
+.icon{
+  font-size: 6em;
+  color: #eb5055;
+  margin: 0.3em;
+}
 p {
   margin-bottom: 1em;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.6em;
 }
 header{
   position: fixed;
 }
 
-.logo > h1{
-  font-weight: 100;
+
+.logo u{
+  text-decoration: none;
 }
 
-.logo a{
-  color: white !important;
-}
-
-.logo b{
+.logo:hover u{
   color: #eb5055;
 }
-.sidenav{
-  position: fixed;
-  float: right;
-}
+
+
 section{
   text-align: center;
   padding-top: 10%;
@@ -116,6 +139,25 @@ section.projects{
   background-color: #e05a54;
 }
 
+section.projects .icon{
+  color: white;
+}
+
+section.projects ul{
+  list-style: none;
+}
+
+section.projects a,
+section.projects .icon{
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+section.projects p{
+  color: #464542;
+}
+
+
 section.hobbies{
   background-color: #dbbea1;
 }
@@ -125,14 +167,4 @@ section.contact{
 }
 
 
-.icon{
-  font-size: 6em;
-  color: #eb5055;
-  margin-bottom: 0.3em;
-}
 
-p{
-  font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.6em;
-}
