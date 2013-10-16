@@ -1,0 +1,34 @@
+.container-fluid,.container{
+	width: 70% !important;
+	margin: auto;
+}
+
+.container-fluid{
+	margin-top: 50px;
+}
+
+.container-fluid .container{
+	padding-top: 20px;
+}
+
+.main{
+	background-color: #eed;
+}
+
+.main .container .row{
+	background-color: #eee;
+}
+
+.sidebar{
+	background-color: skyblue;
+}
+
+
+.avatar{
+	width: 100px;
+	height: 100px;
+}
+
+hr{
+	border: 1px dashed #ccc;
+}
